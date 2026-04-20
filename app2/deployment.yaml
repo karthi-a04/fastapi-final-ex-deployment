@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: fastapi-app2
-          image: karthianbazhagan4/fastapi-app:4d46740f
+          image: karthianbazhagan4/fastapi-app:712b8769
           ports:
             - containerPort: 80
           env:
