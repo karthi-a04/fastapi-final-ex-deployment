@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-app2
+  namespace: fastapi-app
+  labels:
+    app: fastapi
+    service: app2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi
+      service: app2
+  template:
+    metadata:
+      labels:
+        app: fastapi
+        service: app2
+    spec:
+      containers:
+        - name: fastapi-app2
+          image: karthianbazhagan4/fastapi-app:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: SERVICE_NAME
+              value: app2
