@@ -6,6 +6,9 @@ metadata:
   labels:
     app: fastapi
     service: app2
+env:
+  - name: SERVICE_NAME
+    value: app2
 spec:
   replicas: 1
   selector:
