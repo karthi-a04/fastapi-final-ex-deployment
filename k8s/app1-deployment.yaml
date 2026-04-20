@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: app1
-          image: karthianbazhagan4/fastapi-app:latest
+          image: karthianbazhagan4/fastapi-app:2613b8dd
           ports:
             - containerPort: 80
           env:
