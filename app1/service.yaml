@@ -4,7 +4,7 @@ metadata:
   name: fastapi-service-app1
   namespace: fastapi-app
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: fastapi
     service: app1
